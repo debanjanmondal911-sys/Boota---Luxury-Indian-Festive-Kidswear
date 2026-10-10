@@ -26,7 +26,7 @@ import {
   saveCachedWishlistProducts,
   getCachedWishlistProducts,
 } from './data/allCatalogProducts';
-import { ArrowLeft, Settings } from 'lucide-react';
+import { Settings } from 'lucide-react';
 import { BestPairedWith } from './components/BestPairedWith';
 import { SimilarStyleCarousel } from './components/SimilarStyleCarousel';
 import { AdminProductSettingsModal } from './components/AdminProductSettingsModal';
@@ -947,22 +947,11 @@ export default function App() {
           /* Product Detail Page View with Back Navigation */
           <div className="w-full">
             <div className="max-w-[1320px] mx-auto px-4 md:px-8 lg:px-[56px] pt-6 pb-2">
-              <div className="flex items-center justify-between gap-4">
-                <div className="flex items-center gap-3">
-                  <button
-                    type="button"
-                    onClick={handleBack}
-                    className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-[4px] border border-[#E8DADD] bg-white hover:bg-[#FAF6F4] text-[#962949] text-[12.5px] font-semibold transition-all cursor-pointer shadow-2xs hover:shadow-xs group"
-                    title="Go back to previous page"
-                  >
-                    <ArrowLeft className="w-3.5 h-3.5 transition-transform group-hover:-translate-x-0.5" />
-                    <span>Back</span>
-                  </button>
-
-                  <nav
-                    aria-label="Breadcrumb"
-                    className="flex items-center space-x-2 text-[13px] text-[#6F6265] font-normal flex-wrap"
-                  >
+              <div className="flex items-center justify-between">
+                <nav
+                  aria-label="Breadcrumb"
+                  className="flex items-center space-x-2 text-[13px] text-[#6F6265] font-normal flex-wrap"
+                >
                     <button
                       type="button"
                       onClick={() => pushView('home')}
@@ -999,7 +988,6 @@ export default function App() {
                   </nav>
                 </div>
               </div>
-            </div>
 
             {/* Product Hero 2-Column Split */}
             <div className="max-w-[1320px] mx-auto px-4 md:px-8 lg:px-[56px] py-6 lg:py-10">
