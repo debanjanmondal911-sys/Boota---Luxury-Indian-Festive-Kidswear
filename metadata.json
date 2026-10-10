@@ -1,0 +1,6 @@
+{
+  "name": "Boota - Luxury Indian Festive Kidswear",
+  "description": "Gulnar Silk Lehenga Set - Handcrafted luxury ethnic occasion wear for girls by Boota.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

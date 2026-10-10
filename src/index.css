@@ -1,0 +1,128 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: 'Cormorant Garamond', Georgia, serif;
+  --font-sans: 'Manrope', system-ui, -apple-system, sans-serif;
+
+  --color-brand-maroon: #962949;
+  --color-maroon-dark: #7A1F3B;
+  --color-soft-blush: #F9D0D6;
+  --color-warm-ivory: #FFFDF9;
+  --color-charcoal: #2B2224;
+  --color-muted-taupe: #6F6265;
+  --color-soft-border: #E8DADD;
+  --color-white: #FFFFFF;
+  --color-success: #962949;
+  --color-error: #B3261E;
+}
+
+body {
+  font-family: var(--font-sans);
+  color: #2B2224;
+  background-color: #FFFDF9;
+  line-height: 1.6;
+  font-size: 15px;
+}
+
+/* Headings: Cormorant Garamond Semibold */
+h1, h2, h3, .font-heading {
+  font-family: var(--font-serif);
+  font-weight: 600;
+  color: #962949;
+}
+
+/* H1 scale: 48-56px desktop, 34-40px mobile, line-height 1.1 */
+.text-h1 {
+  font-family: var(--font-serif);
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 1.1;
+  color: #962949;
+}
+@media (min-width: 1024px) {
+  .text-h1 {
+    font-size: 52px;
+  }
+}
+
+/* H2 scale: 34-40px desktop, 28-32px mobile */
+.text-h2 {
+  font-family: var(--font-serif);
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 1.2;
+  color: #962949;
+}
+@media (min-width: 1024px) {
+  .text-h2 {
+    font-size: 38px;
+  }
+}
+
+/* H3 scale: 24-28px desktop, 20-22px mobile */
+.text-h3 {
+  font-family: var(--font-serif);
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.25;
+  color: #962949;
+}
+@media (min-width: 1024px) {
+  .text-h3 {
+    font-size: 26px;
+  }
+}
+
+/* Navigation font style: Manrope Medium, 13-14px, letter-spacing 0.04em */
+.text-nav {
+  font-family: var(--font-sans);
+  font-weight: 500;
+  font-size: 13.5px;
+  letter-spacing: 0.04em;
+}
+
+/* Button font style: Manrope Semibold, 13-14px, letter-spacing 0.06em */
+.btn-primary {
+  font-family: var(--font-sans);
+  font-weight: 600;
+  font-size: 13.5px;
+  letter-spacing: 0.06em;
+  background-color: #962949;
+  color: #FFFFFF;
+  border-radius: 4px;
+  transition: background-color 0.15s ease;
+}
+.btn-primary:hover {
+  background-color: #7A1F3B;
+}
+
+/* Product Name & Price styling */
+.text-product-name {
+  font-family: var(--font-sans);
+  font-weight: 500;
+  font-size: 14.5px;
+  color: #2B2224;
+}
+
+.text-price {
+  font-family: var(--font-sans);
+  font-weight: 600;
+  font-size: 16px;
+  color: #962949;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #FFFDF9;
+}
+::-webkit-scrollbar-thumb {
+  background: #E8DADD;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #6F6265;
+}
